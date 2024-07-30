@@ -28,6 +28,7 @@ public class UsuarioService {
 	public UsuarioDTO alterar(UsuarioDTO usuario) {
 		UsuarioEntity usuarioEntity = new UsuarioEntity(usuario);
 		return new UsuarioDTO(usuarioRepository.save(usuarioEntity));
+
 	}
 
 	public void excluir(Long id) {
